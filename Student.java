@@ -6,7 +6,7 @@ public class Student {
 		private String Department;
 		private String Email;
 		private long PhoneNumber;
-		Student(int StudentID,String StudentName,String Department,String Email,long PhoneNumber){
+		public Student(int StudentID,String StudentName,String Department,String Email,long PhoneNumber){
 			this.StudentID=StudentID;
 			this.StudentName=StudentName;
 			this.Department=Department;
@@ -42,5 +42,8 @@ public class Student {
 		}
 		public void SetPhoneNumber(long PhoneNumber) {
 			this.PhoneNumber=PhoneNumber;
+		}
+		public String toString() {
+			return StudentID+" "+StudentName+" "+Email+" "+PhoneNumber+" "+Department;
 		}
 }
